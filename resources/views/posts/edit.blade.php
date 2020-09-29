@@ -6,7 +6,7 @@
             <h1 class="h5 mb-4">
                 投稿の編集
             </h1>
-            <form action="{{ route('posts.update', ['post' => $post ]) }}" method="POST">
+            <form action="{{ route('posts.update', ['post' => $post ]) }}" method="post">
                 @csrf
 
                 @method('PUT')
