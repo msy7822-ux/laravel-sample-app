@@ -4,7 +4,7 @@
     <div class="container mt-4">
         <div class="mb-5">
         <!-- コントローラー名.アクション名 -->
-            <a href="{{ url('/post/create') }}" class="btn btn-primary">
+            <a href="{{ route('posts.create') }}" class="btn btn-primary">
                 投稿を新規作成する
             </a>
         </div>
@@ -20,7 +20,7 @@
                     <p class="card-text">
                         {!! nl2br($post->body) !!}
                     </p>
-                    <a href="/{{ $post->id }}" class="card-link">投稿詳細</a>
+                    <a href="{{ route('posts.show', ['post' => $post]) }}" class="card-link">投稿詳細</a>
                 </div>
                 <!-- card footer -->
                 <div class="card-footer">

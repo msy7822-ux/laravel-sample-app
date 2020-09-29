@@ -4,7 +4,7 @@
     <div class="container mt-4">
         <div class="border p-4">
             <!-- 編集ボタン -->
-            <a href="/post/edit/{{ $post->id }}" class="btn btn-primary">編集する</a>
+            <a href="{{ route('posts.edit', ['post' => $post]) }}" class="btn btn-primary">編集する</a>
             <!-- 削除ボタン -->
             <form action="{{ route('posts.destroy', ['post' => $post]) }}" method="post" style="display: inline-block;">
                 @csrf
