@@ -11,7 +11,7 @@
 
                 @method('PUT')
                 <!-- <input type="hidden" name="_method" value="PUT">このコードが生成される -->
-                <fieldset class="mb4">
+                <fieldset class="mb-4">
                     <!-- タイトルフォーム -->
                     <div class="form-group">
                         <label for="title">タイトル</label>

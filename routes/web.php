@@ -16,6 +16,6 @@ use App\Http\Controllers\PostsController;
 */
 
 // 投稿一覧ページへのルーティング
-Route::get('/', [PostsController::class, 'index'])->name('top');
+Route::get('/', [PostsController::class, 'index']);
 Route::resource('comments', CommentsController::class, ['only' => ['store']]);
 Route::resource('posts', PostsController::class, ['only' => ['create',  'store', 'show', 'edit', 'update', 'destroy']]);

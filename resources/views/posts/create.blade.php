@@ -41,7 +41,7 @@
 
                     <!-- form button -->
                     <div class="mt-5">
-                        <a href="{{ url('/') }}" class="btn btn-secondary">キャンセル</a>
+                        <a href="/" class="btn btn-secondary">キャンセル</a>
                         <button type="submit" class="btn btn-primary">投稿する</button>
                     </div>
                 </fieldset>
