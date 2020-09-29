@@ -72,7 +72,7 @@ class PostsController extends Controller
             $post->delete();
         });
 
-        return redirect()->route('top');
+        return redirect('/');
     }
     
 }
